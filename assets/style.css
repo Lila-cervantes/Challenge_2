@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+/* This places a font-family over the page*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* this contains the color and size of the text in the header. 
+I was trying to place an image for the header instead of just a 
+purple background color. I still aim for that design.*/
+header {
+    background-color: #6e3b75;
+    display: flex;
+    background-size: cover;
+    padding: 1%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/*This one was tricky, this is for my photo in the header. 
+I would love to add multiple colors for the border-radius */
+header img {
+    width: 30%;
+    height: auto;
+    border-radius: 20%;
+    size: 200px;
+}
+/* created a border around my name "Yadira Cervantes" and a border around the navigation*/
+header h1 {
+    justify-content: center;
+    display: flex;
+    width: fit-content;
+    font-size: 35px;
+    background-color: #bdadbf;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+nav ul {
+    display:flex;
+    min-width: 350px;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px 10px 10px;
+    color: white;
+    background-color: #bdadbf; 
+}
+/*
+.main-course {
+    width: fit-content;
+    height: auto;
+    margin: 25px;
+} */
+.about-me {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* This portion aligns my paragraph and creates the font size. Also the margin for my text in the about me*/
+.about-me-right {
+    margin: 0 6% 0 4%;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-start;
+}
+/* this is the about-me paragraph*/
+.about-me-right p {
+    display: flex;
+    flex-wrap: wrap;
+    color: #6e3b75;
+}
+
+/*I placed 3 classes together since it would be much easier and quicker. These place my 2 tags on the left side*/
+.about-me, .portfolio, .contact {
+    display: flex;
+    margin: 2em 0;
+    color:#6e3b75;
+}
+/*What i used for my photos, this one also took some time 
+becuase I was unorganized at the start.*/
+.picture-container {
+    justify-content: space-between;
+    align-items: stretch;
+    margin-right: 20px;
+    margin-left: 50px;
+    flex: wrap;
+    align-items: auto;
+}
+/* Photos are lined up side by side*/
+.rightside {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* these are for the photos. it contains photos, borders, size*/
+img {
+    border: 5px solid #bdadbf;
+}
+
+/*when user hovers mouse over photo, 
+it will become lighter */
+.rightside img:hover {
+    opacity: .5;
+}
+/* captions at the bottom of each photo */
+.caption {
+    position: relative;
+    background-color: rgb(192, 155, 170);
+    font-size: 15px;
+    padding: 5px 25px;
+    padding-top: 25px;
+    margin-top: 10px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+
+/* this is for my contact info */
+.contact {
+    width: 15%;
+    margin: 0 6% 0 4%;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 760px) and (max-width: 1000px) {
+    .main-course {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    .rightside {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width: 576px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .main-course {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    .rightside {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        width: 100%;
+
+    }
+}

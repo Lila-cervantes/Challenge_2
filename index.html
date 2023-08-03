@@ -1,82 +1,113 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
-
+<!--HERE I HAVE THE NAVIGATION BAR AND MY HEADER INFO-->
 <body>
-    <div class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+    <header class="header">
+        <h1>Yadira Cervantes</h1>
+        <img src="./assets/Mexico.jpg" alt="Mexico City." width="300" height="300">
+        <nav class="nav">
             <ul>
                 <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                    <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
+                    <a href="#contact">Contact Info</a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div class="hero"></div>
-    <div class="content">
-        <div class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
-            <h2>Search Engine Optimization</h2>
-            <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
-        </div>
-        <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
-            <h2>Online Reputation Management</h2>
-            <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
-        </div>
-        <div id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
-            <h2>Social Media Marketing</h2>
-            <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
-        </div>
-    </div>
-    <div class="benefits">
-        <div class="benefit-lead">
-            <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" />
-            <p>
-                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
-        </div>
-        <div class="benefit-brand">
-            <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" />
-            <p>
-                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-            </p>
-        </div>
-        <div class="benefit-cost">
-            <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png" />
-            <p>
-                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
-        </div>
-    </div>
-    <div class="footer">
-        <h2>Made with ❤️️ by Horiseon</h2>
-        <p>
-            &copy; 2019 Horiseon Social Solution Services, Inc.
-        </p>
-    </div>
+        </nav>
+    </header>
+    <!--My about me section-->
+    <main>
+        <section class="main-course">
+            <div class="about-me" id="about-me">
+                <aside class="left">
+                    <h2>About Me</h2>
+                </aside>
+                </div>
+                <!-- I have no idea how to indent on the web page, this is 
+                    how I wanted it to come out to. 2 paragaraphs however 
+                    was having a hard time with this-->
+                <div class="about-me-right">
+                    <p>Born and raised in Chicago by immigrant parents.
+                    Family is a huge part of who I am and have been
+                    fortunate to travel to my familys native country,
+                    Mexico. I draw in my free time now but would love
+                    to dabble with a tattoo machine! I come from a very 
+                    large family of 5 siblings and also being a twin. 
+                    I love to volunteer and support my community.
+                    
+                    Web development has always sparked my interest 
+                    but never knew where to start. I have a degree in 
+                    Animation and Illustration. I've worked on a few 
+                    murals around the city. I worked on screenprinting 
+                    and sculpting. I love working with my hands and creating!
+                    
+                    Overall, welcome to my page! Look around.
+                    </p>
+                </div>
+            </div>
+            <!--WHERE MY ABOUT ME SECTION IS DONE AND i MOVE ONTO MY PORTFOLIO SECTION-->
+            <section class="portfolio" id="portfolio">
+                <aside class="left">
+                      <h2>Portfolio</h2>
+                </aside>
+            </section>
+            <!--here I have artwork and other photos. the captions and photos are in their own divs.-->
+            <div class="rightside">
+                <div class="picture-container">
+                    <img src="./assets/Purple-tree.jpg" alt="Purple-trees" width="300" height="300">
+                    <div class="caption">
+                    <h3>Trees</h3>
+                    <p>Photography</p>
+                    </div>
+                </div>
+                    <div class="picture-container">
+                        <img src="./assets/LSD.jpg" alt="Purple-Man" width="300" height="300">
+                        <div class="caption">
+                        <h3>Art Work</h3>
+                        <p>Illustrations</p>
+                        </div>
+                    </div>
+                    <div class="picture-container">
+                        <img src="./assets/LR.jpg" alt="Low-Riders" width="300" height="300">
+                        <div class="caption">
+                        <h3>Low-Riders</h3>
+                        <p>Cultura</p>
+                        </div>
+                    </div>
+                    <div class="picture-container">
+                        <img src="./assets/VSOH.jpg" alt="VSOH" width="300" height="300">
+                        <div class="caption">
+                        <h3>Plants</h3>
+                        <p>Green Thumb</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <!--Here begins my caption-->
+        <section class="contact" id="contact">
+            <aside class="left">
+                <h2>Contact Info</h2>
+            </aside>
+            <div class="contact-info-rightC">
+                <ul>
+                    <li>name123@gmail.com</li>
+                    <li>https://github.com/Lila-cervantes</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>
